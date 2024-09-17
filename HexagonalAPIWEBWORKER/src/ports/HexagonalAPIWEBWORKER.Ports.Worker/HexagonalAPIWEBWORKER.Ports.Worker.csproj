@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-HexagonalAPIWEBWORKER.Ports.Worker-7bc32829-5622-49ba-a04e-7f13c0a503ba</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\HexagonalAPIWEBWORKER.Core.Application\HexagonalAPIWEBWORKER.Core.Application.csproj" />
+    <ProjectReference Include="..\..\core\HexagonalAPIWEBWORKER.Core.Domain\HexagonalAPIWEBWORKER.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\core\HexagonalAPIWEBWORKER.Core.Infra\HexagonalAPIWEBWORKER.Core.Infra.csproj" />
+    <ProjectReference Include="..\..\core\HexagonalAPIWEBWORKER.Core.Repository\HexagonalAPIWEBWORKER.Core.Repository.csproj" />
+  </ItemGroup>
+</Project>

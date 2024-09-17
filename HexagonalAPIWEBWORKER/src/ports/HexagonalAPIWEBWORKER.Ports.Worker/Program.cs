@@ -1,6 +1,6 @@
-using ArquiteturaHexagonalEntityFramework.Ports.Worker.Configuration;
-using TemplateHexagonal.Core.Infra.Shared;
-using TemplateHexagonal.Ports.Worker;
+using HexagonalAPIWEBWORKER.Core.Infra.Shared;
+using HexagonalAPIWEBWORKER.Ports.Worker;
+using HexagonalAPIWEBWORKER.Ports.Worker.Configuration;
 
 
 var builder = Host.CreateApplicationBuilder(args);
