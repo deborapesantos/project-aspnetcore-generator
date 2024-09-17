@@ -1,6 +1,8 @@
 # Gerador de Projetos .NET com dotnet new
 
-Este projeto contém uma aplicação em Python que facilita a criação de novos projetos .NET com templates dotnet com o básico da arquitetura Hexagonal (ports, core, adapters e tests) e configurações de aplicação (healthCheck, Swagger, Middlewares e etc.), por meio de uma interface gráfica (GUI) criada com Tkinter. A aplicação permite que você selecione o tipo de template que você quer criar o projeto (API e Worker, API, Web e API), insira o nome do projeto e escolha o diretório onde ele será salvo. Internamente, o projeto é gerado usando o comando dotnet new.
+Este projeto contém uma aplicação em Python que facilita a criação de novos projetos .NET com templates dotnet com o básico da arquitetura Hexagonal (ports, core, adapters e tests) e configurações de aplicação (healthCheck, Swagger, Middlewares e etc.), por meio de uma interface gráfica (GUI) criada com Tkinter. 
+
+A aplicação permite que você selecione o tipo de template que você quer criar o projeto (API e Worker, API, Web e API), insira o nome do projeto e escolha o diretório onde ele será salvo. Internamente, o projeto é gerado usando o comando dotnet new.
 
 ## Funcionalidades
 
