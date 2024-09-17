@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Debora Santos",
+  "classifications": [ "Web", "API"],
+  "identity": "ProjectHex.Template",
+  "name": "Meu Template de aplição Web API Hexagonal",
+  "shortName": "webapihex",
+  "sourceName": "HexagonalAPIWEBWORKER",
+  "preferNameDirectory": true,
+   "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "HexagonalAPIWEBWORKER",
+      "replaces": "HexagonalAPIWEBWORKER"
+    },
+    "author": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "AutorPadrao"
+    },
+  "fieldsName": {
+    "type": "parameter",
+    "datatype": "string",
+    "defaultValue": "HexagonalAPIWEBWORKER",
+    "replaces": "HexagonalAPIWEBWORKER"
+  }
+  }
+}

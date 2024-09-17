@@ -1,19 +1,15 @@
-
 import tkinter as tk
 from tkinter import messagebox, filedialog
 import subprocess
+import os
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Função para rodar o comando dotnet new
 def create_project():
     project_name = entry_project_name.get().strip()
     template_type = combo_template_type.get().strip().lower()
     project_path = entry_project_path.get().strip()
-
-    minha_lista = ["ArquiteturaHexagonal.EntityFramework.API.Worker"]
-
-    for item in minha_lista:
-        subprocess.run(f"cd {item}", shell=True, capture_output=True, text=True)
-        subprocess.run("dotnet new -i ./ --force", shell=True, capture_output=True, text=True)
 
     if not project_name:
         messagebox.showerror("Erro", "Por favor, insira o nome do projeto.")
@@ -23,8 +19,16 @@ def create_project():
         messagebox.showerror("Erro", "Por favor, escolha o diretório onde o projeto será criado.")
         return
 
+    # Lista de templates
+    minha_lista = ['templatehexagonal', 'webapihex']
+
+    # Rodar comandos para instalar os templates
+    for item in minha_lista:
+        template_path = os.path.join(current_directory, item)
+        subprocess.run(f"dotnet new -i {template_path} --force", shell=True, capture_output=True, text=True)
+        
     # Monta o comando dotnet new
-    command = f"dotnet new {template_type} -n {project_name} --namespace {project_name} --fieldsName {project_name} -o {project_path}/{project_name}"
+    command = f"dotnet new {template_type} -n {project_name} --namespace {project_name} --fieldsName {project_name} -o {os.path.join(project_path, project_name)}"
 
     # Pergunta ao usuário se ele confirma a criação do projeto
     confirm = messagebox.askyesno("Confirmação", f"Criar o projeto '{project_name}' no diretório '{project_path}' com o template '{template_type}'?")
@@ -63,10 +67,11 @@ def setup_gui():
     # Label e ComboBox para selecionar o tipo de template
     tk.Label(root, text="Tipo de Template:").grid(row=1, column=0, padx=10, pady=10)
     combo_template_type = tk.StringVar()
-    template_options = ['templatehexagonal']
-    dropdown_template = tk.OptionMenu(root, combo_template_type, *template_options)
+    
+    minha_lista = ['templatehexagonal', 'webapihex']
+    dropdown_template = tk.OptionMenu(root, combo_template_type, *minha_lista)
     dropdown_template.grid(row=1, column=1, padx=10, pady=10)
-    combo_template_type.set(template_options[0])  # Definir valor padrão
+    combo_template_type.set(minha_lista[0])  # Definir valor padrão
 
     # Label e TextBox para o caminho do projeto
     tk.Label(root, text="Caminho do Projeto:").grid(row=2, column=0, padx=10, pady=10)
@@ -86,4 +91,3 @@ def setup_gui():
 # Inicia a aplicação
 if __name__ == "__main__":
     setup_gui()
-
