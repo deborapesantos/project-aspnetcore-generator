@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Debora Santos",
+  "classifications": [ "Web", "API"],
+  "identity": "ProjectHex.Template",
+  "name": "Meu Template de API Hexagonal",
+  "shortName": "templatehexagonal",
+  "sourceName": "ArquiteturaHexagonalEntityFramework",
+  "preferNameDirectory": true,
+   "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "TemplateHexagonal",
+      "replaces": "TemplateHexagonal"
+    },
+    "author": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "AutorPadrao"
+    },
+  "fieldsName": {
+    "type": "parameter",
+    "datatype": "string",
+    "defaultValue": "ArquiteturaHexagonalEntityFramework",
+    "replaces": "ArquiteturaHexagonalEntityFramework"
+  }
+  }
+}
