@@ -38,7 +38,8 @@ dotnet --version
 
   python criador-projeto.py
 
-  ![image](https://github.com/user-attachments/assets/ab25bc08-c5d3-45f5-8b43-0dfdb0b86e4f)
+![image](https://github.com/user-attachments/assets/f229536a-7c80-4de6-885e-8e573eb83fea)
+
 
 
  
