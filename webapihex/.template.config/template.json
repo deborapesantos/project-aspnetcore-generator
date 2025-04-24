@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Debora Santos",
   "classifications": [ "Web", "API"],
-  "identity": "ProjectHex.Template",
+  "identity": "ProjectHex.Template.WebApiHex",
   "name": "Meu Template de aplição Web API Hexagonal",
   "shortName": "webapihex",
   "sourceName": "HexagonalAPIWEBWORKER",

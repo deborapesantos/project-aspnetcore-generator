@@ -43,5 +43,17 @@ dotnet --version
 ![image](https://github.com/user-attachments/assets/f229536a-7c80-4de6-885e-8e573eb83fea)
 
 
+## Possiveis erros 
+nao instala automaticamente os templates, pode instalar manualmente
+
+dotnet new --list
+dotnet new -i C:\Repository\project-aspnetcore-generator\templatehexagonal
+dotnet new -i C:\Repository\project-aspnetcore-generator\webapihex
+
+
+
+
+
+
 
  
