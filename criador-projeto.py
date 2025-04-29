@@ -68,7 +68,7 @@ def setup_gui():
     tk.Label(root, text="Tipo de Template:").grid(row=1, column=0, padx=10, pady=10)
     combo_template_type = tk.StringVar()
     
-    minha_lista = ['templatehexagonal', 'webapihex']
+    minha_lista = ['templatehexagonal', 'webapihex','scheduleworker']
     dropdown_template = tk.OptionMenu(root, combo_template_type, *minha_lista)
     dropdown_template.grid(row=1, column=1, padx=10, pady=10)
     combo_template_type.set(minha_lista[0])  # Definir valor padrão

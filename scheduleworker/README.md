@@ -18,3 +18,7 @@ If you want to learn more about creating good readme files then refer the follow
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
+
+
+rodar isso
+- dotnet ef dbcontext scaffold "Host=0.0.0.0;Port=5432;Database=mkds_db;Username=mks_admin;Password=00000000" Npgsql.EntityFrameworkCore.PostgreSQL--output-dir DataModels --context "DataContext" --context-dir "Data" --data-annotations -f

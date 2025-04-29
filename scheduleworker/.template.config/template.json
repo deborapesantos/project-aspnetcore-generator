@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Debora Santos",
+  "classifications": [ "Web", "API"],
+  "identity": "ProjectHex.Template.WorkerSchedule",
+  "name": "Meu Template de API/Worker Hexagonal EntityFramework Postgre WorkerSchedule",
+  "shortName": "scheduleworker",
+  "sourceName": "ArquiteturaHexagonalEntityFrameworkPostgreWorkerSchedule",
+  "preferNameDirectory": true,
+   "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "scheduleworker",
+      "replaces": "scheduleworker"
+    },
+    "author": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "AutorPadrao"
+    },
+  "fieldsName": {
+    "type": "parameter",
+    "datatype": "string",
+    "defaultValue": "ArquiteturaHexagonalEntityFrameworkPostgreWorkerSchedule",
+    "replaces": "ArquiteturaHexagonalEntityFrameworkPostgreWorkerSchedule"
+  }
+  }
+}
